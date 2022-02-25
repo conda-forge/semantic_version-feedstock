@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://github.com/rbarrois/python-semanticversion
-  license: BSD
+  license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary: A library implementing the 'SemVer' scheme.
