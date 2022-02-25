@@ -3,7 +3,7 @@ About semantic_version
 
 Home: https://github.com/rbarrois/python-semanticversion
 
-Package license: BSD
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/semantic_version-feedstock/blob/master/LICENSE.txt)
 
