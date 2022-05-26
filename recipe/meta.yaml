@@ -1,5 +1,5 @@
 {% set name = "semantic_version" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: abf54873553e5e07a6fd4d5f653b781f5ae41297a493666b59dcf214006a12b2
+  sha256: bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c
 
 build:
   number: 0
