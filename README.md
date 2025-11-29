@@ -1,21 +1,20 @@
-About semantic_version
-======================
+About semantic_version-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/semantic_version-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rbarrois/python-semanticversion
 
 Package license: BSD-2-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/semantic_version-feedstock/blob/main/LICENSE.txt)
-
 Summary: A library implementing the 'SemVer' scheme.
 
 Development: https://github.com/rbarrois/python-semanticversion
 
-Documentation: https://python-semanticversion.readthedocs.io
+Documentation: https://python-semanticversion.readthedocs.io/
 
 This small python library provides a few tools to handle SemVer in Python.
 It follows strictly the 2.0.0 version of the SemVer scheme.
-
 
 Current build status
 ====================
@@ -35,7 +34,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-semantic_version-green.svg)](https://anaconda.org/conda-forge/semantic_version) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/semantic_version.svg)](https://anaconda.org/conda-forge/semantic_version) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/semantic_version.svg)](https://anaconda.org/conda-forge/semantic_version) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/semantic_version.svg)](https://anaconda.org/conda-forge/semantic_version) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-semantic__version-green.svg)](https://anaconda.org/conda-forge/semantic_version) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/semantic_version.svg)](https://anaconda.org/conda-forge/semantic_version) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/semantic_version.svg)](https://anaconda.org/conda-forge/semantic_version) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/semantic_version.svg)](https://anaconda.org/conda-forge/semantic_version) |
 
 Installing semantic_version
 ===========================
@@ -103,15 +102,15 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -138,7 +137,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `conda-forge` channel.
 Note that all branches in the conda-forge/semantic_version-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
