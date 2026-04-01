@@ -1,0 +1,40 @@
+schema_version: 1
+context:
+  name: semantic_version
+  version: 2.10.0
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c
+build:
+  number: 1
+  script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  noarch: python
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+tests:
+  - python:
+      python_version: ${{ python_min }}.*
+      imports:
+        - semantic_version
+about:
+  homepage: https://github.com/rbarrois/python-semanticversion
+  license: BSD-2-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A library implementing the 'SemVer' scheme.
+  description: |
+    This small python library provides a few tools to handle SemVer in Python.
+    It follows strictly the 2.0.0 version of the SemVer scheme.
+  documentation: https://python-semanticversion.readthedocs.io
+  repository: https://github.com/rbarrois/python-semanticversion
+extra:
+  recipe-maintainers:
+    - druvus
